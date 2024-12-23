@@ -1,43 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyectos</title>
-  <link rel="stylesheet" href="styles/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Nestor Hernández Díaz</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Proyectos</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="projects.html">Proyectos</a>
-      <a href="contact.html">Contacto</a>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Sobre Mi</a>
+            <a href="projects.html" class="active">Proyectos</a>
+            <a href="contact.html">Contacto</a>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon github"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="#" class="social-icon linkedin"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" class="social-icon instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#" class="social-icon twitter"><img src="images/twitter.svg" alt="Twitter"></a>
+        </div>
     </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Proyectos destacados</h2>
-      <div class="project">
-        <h3>Sistema de Gestión de Usuarios</h3>
-        <p>Java, MySQL, Hosting</p>
-        <a href="#">Ver detalles</a>
-      </div>
-      <div class="project">
-        <h3>Dashboard de Ventas</h3>
-        <p>Power BI, Excel</p>
-        <a href="#">Ver detalles</a>
-      </div>
-      <div class="project">
-        <h3>Control de Temperatura con ESP32</h3>
-        <p>ESP32, Sensores, HTML</p>
-        <a href="#">Ver detalles</a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2023 Nestor Hernandez Diaz</p>
-  </footer>
+
+    <main class="container projects-container">
+        <h1 class="section-title">Proyectos Destacados</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/sistema_gestion_usuarios.png" alt="Sistema de Gestión de Usuarios">
+                </div>
+                <h3>Sistema de Gestión de Usuarios</h3>
+                <div class="project-tech">
+                    <span>Java</span>
+                    <span>MySQL</span>
+                    <span>Hosting</span>
+                </div>
+                <a href="#" class="project-button">Ver detalles</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/dashboard_ventas.png" alt="Dashboard de Ventas">
+                </div>
+                <h3>Dashboard de Ventas</h3>
+                <div class="project-tech">
+                    <span>Power BI</span>
+                    <span>Excel</span>
+                </div>
+                <a href="#" class="project-button">Ver detalles</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>2024 © All Rights Reserved</p>
+    </footer>
 </body>
 </html>
+
